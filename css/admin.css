@@ -40,6 +40,20 @@ section {
     text-align: center;
 }
 
+.caption {
+    /*left: 50%;*/
+    top: -30px;
+    width: fit-content;
+    /*transform: translateX(-50%);*/
+    position: absolute;
+    font-family: 'Noto Serif', serif;
+    font-size: 19px;
+    font-weight: bold;
+    background-color: white;
+    padding: 10px;
+    /*border: 1px solid black;*/
+}
+
 .form {
     left: 50%;
     top: 50vh;
