@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Admin</title>
+
+    <link rel="stylesheet" href="css/admin.css">
+    <link rel="shortcut icon" href="media/logo.png" type="image/png">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script defer src="js/admin.js" type="text/javascript"></script>
+    <script src="https://kit.fontawesome.com/4b937cec52.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap" rel="stylesheet">
+</head>
+
+<body>
+<section class="first-section">
+    <div class="form">
+        <form id="work-form" autocomplete="off">
+            <label>
+                <span>Title</span>
+                <input type="text" name="title" placeholder="Title" required>
+            </label>
+            <label>
+                <span>Subtitle</span>
+                <input type="text" name="subtitle" placeholder="Subtitle" required>
+            </label>
+            <label>
+                <span>Creator</span>
+                <select name="creator" id="creators">
+                </select>
+            </label>
+            <label>
+                <span>Link</span>
+                <input type="text" name="link" placeholder="Link to Artwork" required>
+            </label>
+            <label>
+                <span>Art Style</span>
+                <input type="text" name="style" placeholder="Art Style" required>
+            </label>
+            <label>
+                <span>Location</span>
+                <input type="text" name="location" placeholder="Location" required>
+            </label>
+            <label>
+                <span>Video Link</span>
+                <input type="text" name="video" placeholder="Video Link" required>
+            </label>
+            <label>
+                <span>Description</span>
+                <textarea rows="2" name="description" placeholder="Description"></textarea>
+            </label>
+            <label>
+                <span>Images</span>
+                <input id="in-images" type="file" accept="image/*" name="images" multiple><br>
+            </label>
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</section>
+
+<section class="second-section">
+    <div class="form">
+        <form id="artist-form" autocomplete="off">
+            <label>
+                <span>First Name</span>
+                <input type="text" name="first_name" placeholder="First Name" required>
+            </label>
+            <label>
+                <span>Last Name</span>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+            </label>
+            <label>
+                <span>Genre</span>
+                <input type="text" name="genre" placeholder="Genre" required>
+            </label>
+            <label>
+                <span>Date of Birth</span>
+                <input type="date" name="dob" required>
+            </label>
+            <label>
+                <span>Death</span>
+                <input type="date" name="death">
+            </label>
+            <button type="submit">
+                Submit
+            </button>
+        </form>
+    </div>
+</section>
+
+<section class="third-section">
+    <div class="search">
+        <input class="search-txt" id="search-txt" type="text" name="search" placeholder="Search" autocomplete="off">
+        <button class="search-btn" type="submit">
+            <i class="fas fa-search"></i>
+        </button>
+    </div>
+
+    <div class="works">
+
+    </div>
+</section>
+
+    <div class="message-alert"></div>
+</body>
+</html>
